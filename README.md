@@ -8,18 +8,18 @@
 2. Instalar las dependencias
 
 ```bash
-$ pnpm install
+bunx install
 ```
 3. Crear un archivo `.env` basado en el `.env.template`
 
-4. Ejecutar migracion de prisma `pnpx prisma migrate dev`
+4. Ejecutar migracion de prisma `bunx prisma migrate dev`
 
 5. Levantar el servidor de NATS
-```
+```bash
 docker run -d --name nats-server -p 4222:4222 -p 8222:8222 nats
 ```
 
 6. Compilar y correr el proyecto
 ```bash
-pnpm run start:dev
+bunx run start:dev
 ```
